@@ -1,0 +1,11 @@
+#!/bin/sh
+set -e
+
+user=cardistryio
+
+if [[ whoami -eq "root" ]]; then
+  echo "log-in as root"
+  exit 1
+else
+  adduser $user
+fi
