@@ -4,10 +4,8 @@ set -e
 user=cardistryio
 
 if [[ $(whoami) -eq "root" ]]; then
-  # adduser $user
-  echo "youre root"
+  adduser $user
 else
-  echo "youre not root"
-  # echo "log-in as root"
-  # exit 1
+  echo "log-in as root"
+  exit 1
 fi
