@@ -1,9 +1,0 @@
-#!/bin/sh
-set -e
-
-user=cardistryio
-
-if [[ $(whoami) -eq "root" ]]; then
-  echo "Cannot be logged in as root. Create new user with 'adduser $user'"
-  exit 1
-fi
