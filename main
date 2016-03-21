@@ -4,9 +4,6 @@ set -e
 user=cardistryio
 
 if [[ $(whoami) -eq "root" ]]; then
-  echo <<-EOS
-    This script requires that you're not logged in as root
-    Create a new user with 'adduser $user'
-  EOS
+  echo "Cannot be logged in as root. Create new user with 'adduser $user'"
   exit 1
 fi
