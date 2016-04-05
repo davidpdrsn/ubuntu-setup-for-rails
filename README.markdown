@@ -1,7 +1,7 @@
 Ubuntu setup script
 ===================
 
-This is the script I use when setting up a new VPS running Ubuntu to run Ruby on Rails.
+This is how I normally setup a VPS running Ubuntu for hosting an app made with Ruby on Rails.
 
 ## Create the user
 
