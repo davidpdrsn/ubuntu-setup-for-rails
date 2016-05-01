@@ -12,9 +12,16 @@ This is how I normally setup a VPS running Ubuntu for hosting an app made with R
 
 ## Setup SSH authentication
 
+Run VPS
+
 ```bash
 ssh <username>@<ip address>
 ssh-keygen -t rsa
+```
+
+Run locally
+
+```
 cat ~/.ssh/id_rsa.pub | ssh <username>@<ip address> "mkdir -p ~/.ssh && cat >>  ~/.ssh/authorized_keys"
 ```
 
