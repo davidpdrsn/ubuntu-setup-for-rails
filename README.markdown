@@ -127,6 +127,8 @@ See [cardistryio](https://github.com/davidpdrsn/CardistryIO) for an example of h
 - Setup Capfile
 - Setup deploy.rb
 - Setup config/production.rb
+- Setup figaro with `SECRET_KEY_BASE: <bin/rake secret>`
+- Enable site in /etc/nginx/site-enabled
 - Link database.yml
 - Link application.yml
 
