@@ -83,7 +83,7 @@ export LC_ALL=en_US.UTF-8
 
 ```bash
 # might require exiting and logging in again
-sudo apt-get update -qq && apt-get install -y --no-install-recommends libpq-dev
+sudo apt-get update -qq && sudo apt-get install -y --no-install-recommends libpq-dev
 sudo -i -u postgres
 # type password of unix user
 psql
